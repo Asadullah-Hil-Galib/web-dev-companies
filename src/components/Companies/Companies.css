@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.companies .container{
+    margin-block-start: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.company{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.card{
+    padding: 0 1rem;
+}
+/*
+=======================================
+           Responsive Section
+=======================================
+*/
+@media only screen and (max-width: 990px)  {
+    .companies .container{
+        grid-template-columns: 2fr 1fr;
+    }
+    .company{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 890px)  {
+    .companies .container{
+        grid-template-columns:1fr;
+    }
+    .company{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
