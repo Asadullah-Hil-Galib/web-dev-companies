@@ -12,9 +12,9 @@ const Card = ( props ) => {
 
     return (
         <div className="side-card">
-            <h3>Selected : { props.contact.length } Company</h3>
-            <h3>Company Salary : ${totalSalary}</h3>
-            <h3>Selected Company</h3>
+            <h3 className="selected">Selected : { props.contact.length } Company</h3>
+            <h3 className="salary">Company Salary : ${totalSalary}</h3>
+            <h3 className="select-company">Selected Company</h3>
             <h3>
                 { contact.map(con=> <Select con={con}></Select>)}
             </h3>

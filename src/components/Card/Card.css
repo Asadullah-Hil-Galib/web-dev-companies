@@ -7,3 +7,6 @@
 .side-card h3:last-child{
     border-bottom: none;
 }
+.side-card h3{
+    font-size: 1.5rem !important;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Company.css';
 const Company = ( props ) => {
-    
     const { id, name, img, rating, clients, salary, employees, location } = props.company
     return (
         <div className="single-company">
@@ -16,7 +15,7 @@ const Company = ( props ) => {
                 <h4 className="client"><span>Client : </span> { clients }</h4>
                 <h4><i class="fas fa-map"></i> { location }</h4>
                 <div className="buttons">
-                    <button onClick={()=>props.handleAddToContact(props.company)}>add to contact</button>
+                    <button onClick={() => props.handleAddToContact(props.company)}>Add To Contact</button>
                 </div>
             </div>
         </div>

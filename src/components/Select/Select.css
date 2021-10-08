@@ -1,4 +1,28 @@
-.select-name{
-    border-bottom: 1px solid #888;
-    padding: 0.1rem 0;
+.select-every-company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding: 0.4rem 0.4rem;
+    background: #40739e;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.select-every-company img{
+    width: 40px;
+    height: 40px;
+}
+.select-every-company .close-btn {
+    font-size: 2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.select-every-company .close-btn:hover{
+    color: #e83a3b;
+}
+.select-every-company h5{
+    padding: 0 0.3rem;
+    text-align: center;
 }
